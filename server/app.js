@@ -1,5 +1,4 @@
-const PORT = 9988;
-const express = require('express');
+const {PORT = 9988} = process.env
 const app = express();
 const server = require('http').Server(app);
 const io = require("socket.io")(server, {
