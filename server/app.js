@@ -1,5 +1,6 @@
 const {PORT = 9988} = process.env;
 const express = require('express');
+const app = express();
 const server = require('http').Server(app);
 const io = require("socket.io")(server, {
     path: '/chat/',
